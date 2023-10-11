@@ -13,26 +13,32 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="manifest" href="manifest.json">
 
-
     <link rel="stylesheet" href="css/screen.css">
 
     <script defer src="./script/app.js"></script>
 </head>
 
 <body>
-    <h1>
-        Random Dad Joke
-    </h1>
-    <p>
-        I bought shoes from a drug dealer once. I don't know what he laced them with, but I was tripping all day.
-    </p>
-    <p>
-        Generate new joke
-    </p>
-    <hr>
-    <p>
-        Dad jokes based on <a href="https://icanhazdadjoke.com/">icanhazdadjoke.com</a>
-    </p>
+    <div class="c-header">
+        <h1 class="c-header__text">
+            Random Dad Joke
+        </h1>
+    </div>
+    <div class="c-jokes__flex">
+        <div class="c-jokes">
+            <p class="c-jokes__text js-joke-content">
+                I bought shoes from a drug dealer once. I don't know what he laced them with, but I was tripping all day.
+            </p>
+            <button class="c-button o-button-reset js-joke-button">
+                Generate new joke
+            </button>
+        </div>
+    </div>
+    <div class="c-footer">
+        <p>
+            Dad jokes based on <a href="https://icanhazdadjoke.com/">icanhazdadjoke.com</a>
+        </p>
+    </div>
 </body>
 
 </html>
