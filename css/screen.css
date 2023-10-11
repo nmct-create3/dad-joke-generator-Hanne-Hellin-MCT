@@ -549,16 +549,17 @@ input::placeholder {
   width: 100vw;
   justify-content: center;
   align-items: center;
+  min-height: 10rem;
 }
 
 .c-jokes {
   width: 60rem;
+
   margin-left: var(--global-whitespace-md);
   margin-right: var(--global-whitespace-md);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2rem;
 
   background-color: var(--global-color-neutral-100);
   border-radius: 3rem;
@@ -575,6 +576,33 @@ input::placeholder {
   font-weight: 600;
   font-size: 1.5rem;
   text-align: center;
+  margin-bottom: 2rem;
+}
+
+.c-loading {
+  gap: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin-bottom: 2rem;
+}
+
+.c-loading__placeholder {
+  display: block;
+  width: 25%;
+  height: 2.3rem;
+  margin: 0;
+  border-radius: 0.5rem;
+  background-color: var(--global-color-neutral-400);
+  opacity: 0.4;
+}
+
+.c-loading__placeholder--half {
+  width: 50%;
+}
+
+.c-loading__placeholder--full {
+  width: 100%;
 }
 
 .c-button {
@@ -623,6 +651,11 @@ input::placeholder {
 /*------------------------------------*\
 #UTILITIES
 \*------------------------------------*/
+
+.u-hidden {
+  visibility: hidden;
+  display: none;
+}
 
 /*
     Utilities: color
